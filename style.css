@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: sans-serif;
+  background-color: #eee;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.title {
+  font-size: 150%;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+#wrap {
+  width: 292px;
+  margin: 40px auto 40px auto;
+}
+
+input[type=text] {
+  width: 268px;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  font-size: 15px;
+  outline-style: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+  margin-top: 10px;
+}
+
+#results {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.result {
+  font-size: 80%;
+  padding: 15px 18px 18px 18px;
+  width: calc(100% - 36px);
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(102, 102, 102);
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+.result:hover {
+  color: rgb(40, 40, 40);
+  transform: scale(1.1, 1.1);
+}
+.ban {
+  background-color: rgb(209, 255, 206);
+}
+.noban {
+  background-color: rgb(255, 192, 188);
+}
+h1 {
+  font-size: 110%;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+h2 {
+  margin-top: 8px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+}
