@@ -53,8 +53,9 @@ input[type=text] {
   margin-bottom: 20px;
 }
 
-input[type=checkbox] {
-  margin-top: 10px;
+#sort {
+  width: 375px;
+  margin: 0px auto 10px auto;
 }
 
 #results {
@@ -70,7 +71,7 @@ input[type=checkbox] {
   border-radius: 20px;
   background-color: white;
   color: rgb(102, 102, 102);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 0.2s ease;
 }
 .result:hover {
