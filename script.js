@@ -1,5 +1,6 @@
 function build() {
-  const endpoint = 'https://gist.githubusercontent.com/finnhodgkin/4b12d304c3109fa337f09ec6d57200c3/raw/087a6ce15fb619085f7410759684df2ab170577a/cor-pun.json';
+  const endpoint = 'https://gist.githubusercontent.com/finnhodgkin/' + '4b12d304c3109fa337f09ec6d57200c3/raw/' +
+  '087a6ce15fb619085f7410759684df2ab170577a/cor-pun.json';
 
   const countries = [];
 
@@ -10,6 +11,7 @@ function build() {
   function draw(c) {
     const list = document.querySelector('#results');
     const items = c.map((e) => {
+      console.log(e);
       const pop = e.childpop ? `<h2>Child population: </h2><p>${e.childpop}` : '';
       const status = e.status ? `<h2>Prohibition still to be achieved:</h2>${e.status}` : '';
       const banned = e.punishment === '3' ? `<h2>Corporal punishment banned in ${e.date}.</h2>` : '';
