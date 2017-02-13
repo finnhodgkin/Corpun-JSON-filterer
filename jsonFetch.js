@@ -105,24 +105,30 @@ function build(list) {
 		let el = div('.result', {classList:cl},
 			h1(e.name)
 		);
-		if (!(['tz2', 'tr2', 'es2', '-99', 'pt3', 'pt2'].indexOf(e.id.toLowerCase()) > -1)) {
+		if (['tz2', 'tr2', 'es2', '-99', 'pt3', 'pt2'].indexOf(e.id.toLowerCase()) < 0) {
 			el.style.backgroundImage = `url('4x3/${e.id.toLowerCase()}.svg')`;
 		}
-		if (e.status) el.appendChild(
+		if (e.status) {
+      el.appendChild(
 			div(
 				h2('Still to be prohibited:'),
 				p(e.status)
 				)
 		  );
-	 if (e.date) el.appendChild(
-		 h2(`Corporal punishment banned in ${e.date}`)
-	 );
-	 if (e.childpop) el.appendChild(
-		 div(
-			 h2('Child population:'),
-			 p(e.childpop)
-			 )
-		 );
+    }
+	 if (e.date) {
+     el.appendChild(
+		     h2(`Corporal punishment banned in ${e.date}`)
+	   );
+   }
+	 if (e.childpop) {
+     el.appendChild(
+  		 div(
+  			 h2('Child population:'),
+  			 p(e.childpop)
+  			 )
+  		 );
+     }
 		results.appendChild(
 			a(`http://www.endcorporalpunishment.org/progress/country-reports/${e.link}.html`, el)
 		);
