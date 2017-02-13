@@ -65,17 +65,19 @@ input[type=text] {
 
 .result {
   font-size: 80%;
-  padding: 15px 18px 18px 18px;
-  width: calc(100% - 36px);
+  padding: 15px 18px 18px 88px;
+  width: calc(100% - 106px);
   border: 1px solid black;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
   margin-bottom: 10px;
   transition: all 0.2s ease;
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: 18px 20px;
 }
 .result:hover {
-  color: rgb(40, 40, 40);
   transform: scale(1.1, 1.1);
 }
 .ban {
@@ -84,7 +86,7 @@ input[type=text] {
 .noban {
   background-color: rgb(255, 192, 188);
 }
-h1 {
+h1 {rgb(228, 228, 228)
   font-size: 110%;
   margin-top: 6px;
   margin-bottom: 10px;
